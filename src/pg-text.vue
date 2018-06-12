@@ -1,7 +1,7 @@
 <template>
   <div class="paragraph paragraph--text">
-    <div class="paragraph__text-field">
-      <slot/>
+    <div class="paragraph__field-text">
+      <slot name="field_text"/>
     </div>
   </div>
 </template>
