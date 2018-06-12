@@ -1,5 +1,5 @@
 {
-  "name": "vue-lupus-paragraph-text",
+  "name": "@drunomics/vue-lupus-paragraph-text",
   "version": "0.0.1",
   "description": "Vue paragraph text",
   "main": "dist/main.js",
