@@ -1,4 +1,4 @@
-# vue-lupus-slider
+# vue-lupus-paragrpah-text
 Vue slider component.
 
 
