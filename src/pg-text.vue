@@ -1,15 +1,16 @@
 <template>
   <div class="paragraph paragraph--text">
     <div class="paragraph__field-text">
-      <slot name="field_text"/>
+      {{ fieldText }}
+      <slot/>
     </div>
   </div>
 </template>
-<style lang="scss">
-
-</style>
 <script>
   export default {
     name: 'PgText',
+    props: {
+      fieldText: { type: String, default: () => '' },
+    },
   };
 </script>
