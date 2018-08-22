@@ -20,12 +20,15 @@ Vue.component('pg-text', PgText);
 ## Properties
 You can pass the following props:
 
-- `field-text` ( string )
+- `data-field-text` ( string )
   The text.
+- `data-text-contains-html` ( boolean )
+  Whether text field contains html.
 
 ## Example
 ```
 <pg-text
-  field-text="Quote"
+  data-field-text="Quote"
+  data-text-contains-html="1"
 >
 ```
