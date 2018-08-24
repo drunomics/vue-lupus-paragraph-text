@@ -1,7 +1,12 @@
 <template>
   <div class="paragraph paragraph--text">
-    <div class="paragraph__field-text" v-html="fieldText">
+    <div 
+      class="paragraph__field-text" 
+      v-html="fieldText"
+      v-if="hasText"
+    >
     </div>
+    <slot name="field-text"></slot>
   </div>
 </template>
 <script>
@@ -11,8 +16,8 @@
       dataFieldText: { type: String, default: () => '' },
     },
     computed: {
-      fieldText() {
-        return JSON.parse(this.dataFieldText);
+      hasText() {
+        return this.dataFieldText !== '';
       },
     }
   };
