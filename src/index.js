@@ -1,3 +1,3 @@
-import PgText from './pg-text.vue';
+import PgText from './pg-text.vue'
 
-export { PgText };
+export { PgText }
