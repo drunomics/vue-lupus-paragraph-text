@@ -1,24 +1,15 @@
 <template>
   <div class="paragraph paragraph--text">
-    <div 
-      class="paragraph__field-text" 
-      v-html="fieldText"
-      v-if="hasText"
-    >
+    <div class="title">
+      <slot name="title" />
     </div>
-    <slot name="field-text"></slot>
+    <div class="content">
+      <slot :name="$slots.content ? 'content': 'default'" />
+    </div>
   </div>
 </template>
 <script>
   export default {
-    name: 'PgText',
-    props: {
-      dataFieldText: { type: String, default: () => '' },
-    },
-    computed: {
-      hasText() {
-        return this.dataFieldText !== '';
-      },
-    }
+    name: 'PgText'
   };
 </script>
