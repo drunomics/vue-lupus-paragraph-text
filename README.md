@@ -1,5 +1,5 @@
 # vue-lupus-paragraph-text
-Vue slider component.
+Vue paragraph text component.
 
 
 
@@ -12,23 +12,29 @@ via npm:
 import it:
 
 ```
-import { PgText } from 'vue-lupus-paragraph-text';
+import PgText from 'vue-lupus-paragraph-text';
 
 Vue.component('pg-text', PgText);
 ```
 
-## Properties
-You can pass the following props:
+## Slots
+You can use the following slots
 
-- `data-field-text` ( string )
-  The text.
-- `data-text-contains-html` ( boolean )
-  Whether text field contains html.
+- `title` ( optional )
+  A title.
+- `content` ( default )
+  All other content.
 
-## Example
+## Examples
 ```
-<pg-text
-  data-field-text="Quote"
-  data-text-contains-html="1"
->
+<pg-text>
+  <h2 slot="title">Title</h2
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.</p>
+</pg-text>
+```
+
+```
+<pg-text>
+  <p slot="content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.</p>
+</pg-text>
 ```
