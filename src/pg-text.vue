@@ -9,7 +9,7 @@
   </div>
 </template>
 <script>
-  export default {
-    name: 'PgText'
-  };
+export default {
+  name: 'PgText'
+}
 </script>
